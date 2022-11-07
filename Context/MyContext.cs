@@ -1,8 +1,8 @@
-﻿using API.Models;
+﻿using API_dan_JWT.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace API.Context
+namespace API_dan_JWT.Context
 {
     public partial class MyContext : DbContext
     {

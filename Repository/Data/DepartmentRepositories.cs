@@ -1,9 +1,9 @@
-﻿using API.Context;
-using API.Models;
-using API.Repository.Interface;
+﻿using API_dan_JWT.Context;
+using API_dan_JWT.Models;
+using API_dan_JWT.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 
-namespace API.Repository.Data
+namespace API_dan_JWT.Repository.Data
 {
     public class DepartmentRepositories 
     {

@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace API.Handler
+namespace API_dan_JWT.Handler
 {
     public class Hashing
     {

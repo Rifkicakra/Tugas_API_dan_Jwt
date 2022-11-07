@@ -1,14 +1,14 @@
-﻿using API.ViewModel;
+﻿using API_dan_JWT.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using API.Repository;
-using API.Repositories;
-using API.Models;
+using API_dan_JWT.Repository;
+using API_dan_JWT.Repositories;
+using API_dan_JWT.Models;
 
-namespace API.Controllers
+namespace API_dan_JWT.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

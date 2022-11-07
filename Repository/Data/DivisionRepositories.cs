@@ -1,10 +1,10 @@
-﻿using API.Context;
-using API.Models;
-using API.Repository.Interface;
+﻿using API_dan_JWT.Context;
+using API_dan_JWT.Models;
+using API_dan_JWT.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace API.Repository
+namespace API_dan_JWT.Repository
 {
     public class DivisionRepositories 
     {

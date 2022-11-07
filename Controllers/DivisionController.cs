@@ -1,9 +1,9 @@
-﻿using API.Models;
-using API.Repository;
+﻿using API_dan_JWT.Models;
+using API_dan_JWT.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Controllers
+namespace API_dan_JWT.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

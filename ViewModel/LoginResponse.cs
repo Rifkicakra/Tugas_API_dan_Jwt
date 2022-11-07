@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
-using API.Models;
+using API_dan_JWT.Models;
 
-namespace API.ViewModel
+namespace API_dan_JWT.ViewModel
 {
     public class LoginResponse
     {

@@ -1,12 +1,12 @@
-using API.Context;
-using API.Repositories;
-using API.Repository;
-using API.Repository.Data;
-using API.Repository.Interface;
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using API_dan_JWT.Repository;
+using API_dan_JWT.Repository.Data;
+using API_dan_JWT.Repositories;
+using API_dan_JWT.Context;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 

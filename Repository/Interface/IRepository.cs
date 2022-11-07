@@ -1,4 +1,4 @@
-﻿namespace API.Repository.Interface
+﻿namespace API_dan_JWT.Repository.Interface
 {
     public interface IRepository<Entity, Key> where Entity : class
     {

@@ -1,11 +1,11 @@
-﻿using API.Context;
-using API.Handler;
-using API.Models;
-using API.Repository.Interface;
+﻿using API_dan_JWT.Context;
+using API_dan_JWT.Handler;
+using API_dan_JWT.Models;
+using API_dan_JWT.Repository.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace API.Repositories
+namespace API_dan_JWT.Repositories
 {
     public class AccountRepositories : IRepository<User, int>
     {

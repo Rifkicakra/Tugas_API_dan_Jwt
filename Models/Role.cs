@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace API.Models
+namespace API_dan_JWT.Models
 {
     public class Role
     {

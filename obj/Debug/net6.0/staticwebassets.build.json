@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "bUm1vPqwZHJejLhtNIB7WgmMI8ngxypkYrDApg4MvgQ=",
-  "Source": "API",
-  "BasePath": "_content/API",
+  "Hash": "cPRjWsOPKsP/v/CzAlxfVOUuDr3l1ZA72to1LHnBk1s=",
+  "Source": "API_dan_JWT",
+  "BasePath": "_content/API_dan_JWT",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
