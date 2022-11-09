@@ -85,7 +85,6 @@ namespace API_dan_JWT.Controllers
             }
         }
 
-
         [HttpPost]
         public ActionResult Create(Division division)
         {

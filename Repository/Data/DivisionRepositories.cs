@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace API_dan_JWT.Repository
 {
-    public class DivisionRepositories 
+    public class DivisionRepositories : GeneralRepository<Division>
     {
         MyContext myContext;
 
-        public DivisionRepositories(MyContext myContext)
+        public DivisionRepositories(MyContext myContext) : base(myContext)
         {
             this.myContext = myContext;
         }

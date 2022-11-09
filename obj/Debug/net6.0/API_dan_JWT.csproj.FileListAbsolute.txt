@@ -274,3 +274,16 @@ C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\obj\Debug\n
 C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\obj\Debug\net6.0\API_dan_JWT.pdb
 C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\obj\Debug\net6.0\API_dan_JWT.genruntimeconfig.cache
 C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\obj\Debug\net6.0\ref\API_dan_JWT.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\Rifki Cakra Pratama\source\repos\ProjectAppbaru\API_dan_JWT\bin\Debug\net6.0\System.Memory.Data.dll

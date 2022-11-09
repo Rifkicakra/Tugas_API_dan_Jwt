@@ -12,6 +12,7 @@ namespace API_dan_JWT.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles ="Karyawan,Admin")]
     public class AccountController : ControllerBase
     {
         private readonly AccountRepositories accountRepositories;
@@ -23,8 +24,6 @@ namespace API_dan_JWT.Controllers
             _configuration = configuration;
             _logger = logger;
         }
-
-        [Authorize]
         [HttpGet]
         public ActionResult Get()
         {
@@ -93,7 +92,7 @@ namespace API_dan_JWT.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpPost("Create")]
         public ActionResult Create(User user)
         {
             var data = accountRepositories.Create(user);
@@ -127,7 +126,7 @@ namespace API_dan_JWT.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut("Update")]
         public ActionResult Update(User user)
         {
             var data = accountRepositories.Update(user);
@@ -195,8 +194,7 @@ namespace API_dan_JWT.Controllers
             }
         }
 
-
-
+        [AllowAnonymous]
         [HttpPost("Register")]
         public ActionResult Register(string fullname, string email, DateTime birthdate, string password)
         {
@@ -268,6 +266,7 @@ namespace API_dan_JWT.Controllers
             }
         }
 
+       // [HttpGet("{email}")]
         private string Token(string email)
         {
             List<Claim> claims = new List<Claim>
