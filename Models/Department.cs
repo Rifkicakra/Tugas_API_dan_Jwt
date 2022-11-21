@@ -10,10 +10,10 @@ namespace API_dan_JWT.Models
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        
+
         public int DivisionID { get; set; }
         [ForeignKey("DivisionID")]
         [JsonIgnore]
-        public Division? Divisions { get; set; }    
+        public Division? Divisions { get; set; }
     }
 }

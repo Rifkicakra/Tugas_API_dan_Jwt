@@ -1,13 +1,14 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
-//using API_dan_JWT.Repository.Interface;
+using API_dan_JWT.Repository.Interface;
 using API_dan_JWT.Repository;
 using API_dan_JWT.Repository.Data;
 using API_dan_JWT.Repositories;
 using API_dan_JWT.Context;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using API_dan_JWT.Handler;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,8 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.PropertyNamingPolicy = null;
 });
+
+builder.Services.AddTransient<JWTConfig>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -39,6 +42,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 });
 
 
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -49,18 +53,18 @@ builder.Services.AddSwaggerGen(x =>
     x.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "Tugas  API",
-        Description ="ASP.NET Core API"
+        Title = "BRM API",
+        Description = "ASP.NET Core API"
     });
 
     x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        Name ="Authorization",
-        Type =SecuritySchemeType.ApiKey,
-        Scheme ="Bearer",
-        BearerFormat ="JWT",
-        In =ParameterLocation.Header,
-        Description = "JWT Authorization header using the Bearer schame"
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "Jwt",
+        In = ParameterLocation.Header,
+        Description = "JWT Authorization Header using The Bearer Scheme"
     });
 
     x.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -71,10 +75,10 @@ builder.Services.AddSwaggerGen(x =>
                 Reference = new OpenApiReference
                 {
                     Type = ReferenceType.SecurityScheme,
-                    Id ="Bearer"
+                    Id = "Bearer"
                 }
             },
-            new string[]{}
+            new string[] { }
         }
     });
 });
@@ -87,11 +91,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseAuthentication();
-
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

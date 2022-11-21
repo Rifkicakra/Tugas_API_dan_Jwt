@@ -1,4 +1,5 @@
-﻿using API_dan_JWT.Models;
+﻿using API_dan_JWT.Base;
+using API_dan_JWT.Models;
 using API_dan_JWT.Repository;
 using API_dan_JWT.Repository.Data;
 using Microsoft.AspNetCore.Authorization;
@@ -8,7 +9,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace API_dan_JWT.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize]
     [ApiController]
     public class DepartmentController : ControllerBase
     {
